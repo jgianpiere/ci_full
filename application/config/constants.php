@@ -121,5 +121,49 @@ define('EXIT_DATABASE', 8); // database error
 define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
+define('THEME', 'default/'); // tema usandose.
+
+define('PORT', ''); // Puerto de conexion en caso existe usar (:00) 
+define('DOMAIN', 'localhost'); // Dominio de la aplicacion.
+define('PROYECT', 'ci_full/'); // sub carpeta del proyecto
+define('BASE_PATH', 'http://'.DOMAIN.PORT.'/'.PROYECT); // ruta origen de la aplicacion
+
+define('STATICS', BASE_PATH.'statics/'); // carpeta origen de los recursos estaticos de la aplicacion.
+
+define('CSS'		, STATICS.'Themes/'.THEME.'css/'	);
+define('CSSLIB'		, STATICS.'css/'					);
+define('JS' 		, STATICS.'Themes/'.'js/'			);
+define('JSLIB' 		, STATICS.'Themes/'.THEME.'js/'		);
+define('IMG'		, STATICS.'Themes/'.THEME.'img/'	);
+define('IMGLIB' 	, STATICS.'img/'					);
+define('UPLOAD' 	, STATICS.'upload/'					);
+define('UPLOADLIB' 	, STATICS.'Themes/'.THEME.'upload/'	);
+define('GALERY' 	, STATICS.'Themes/'.THEME.'galery/'	);
+define('GALERYLIB' 	, STATICS.'galery/'					);
+define('PLUGINS' 	, STATICS.'Themes/'.THEME.'plugins/');
+define('PLUGINSLIB'	, STATICS.'plugins/'				);
+define('APIS' 		, STATICS.'Themes/'.THEME.'apis/'	);
+define('APISLIB' 	, STATICS.'apis/'					);
+define('APPS' 		, STATICS.'Themes/'.THEME.'apps/'	);
+define('APPSLIB' 	, STATICS.'apps/'					);
+define('FONTS' 		, STATICS.'Themes/'.THEME.'fonts/'	);
+define('FONTSLIB' 	, STATICS.'fonts/'					);
+
+define('KEY_ENCRYPT_URL', '9a4842d5c6c7257254041859feac5ff0');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

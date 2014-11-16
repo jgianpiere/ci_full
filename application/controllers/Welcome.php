@@ -37,7 +37,11 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends MY_Controller {
+	public function __construct(){
+        parent::__construct();
+        
+    }
 
 	/**
 	 * Index Page for this controller.
@@ -56,7 +60,47 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->title 		= 'mi titulo';
+		$this->description 	= 'esta es mi web';
+		$this->css 			= array('styles1','ejemplo','prueba');
+		$this->js 			= array('script1','ejemplo','prueba');
+		$this->css_lib 		= array('libcss1','libcss2');
+		$this->js_lib 		= array('libcjs1','libcjs2');
+		$this->urlstyle		= array('http://domain/style.css');
+		$this->urlscript 	= array('http://domain/script.js');
+
+	/*
+		# Example Template use
+		$datos = array('nombre' => 'Gianpiere');
+		$this->Template('landing/bienvenida',TRUE,$datos);
+	*/
+
+	/*
+		# Cargar una vista fuera del folder Theme. [param2: FALSE]
+		$this->Theme('welcome_message',FALSE);
+	*/	
+
+	/*
+		# Cargarmos un include del template y lo agregamos como html
+		# dentro de la siguiente vista usando {variable}
+		$vista_activa = $this->includeView('business.php');
+		$datos = array(
+			'nombre'	=> $vista_activa
+		);
+		$this->Template('landing/bienvenida',TRUE,$datos);
+	*/
+	
+	/*
+		# Cargar una vissta dentro del theme template interface
+		$this->Theme('landing/bienvenida',TRUE);
+	*/
+		
+	/*
+		# Cargar una vista sin el Template pero dentro del theme.
+		$this->innerView('welcome_message',FALSE);
+	*/
+
+		$this->Theme('welcome_message',FALSE);
 	}
 }
 

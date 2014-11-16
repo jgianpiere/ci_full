@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "application"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "system"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "statics"
+		}
+	]
+}
