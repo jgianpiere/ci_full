@@ -51,19 +51,6 @@ if ( ! function_exists('UrlCrypt'))
 /**
  * echo replace for compress gzip output.
  *
-<<<<<<< HEAD
- * @param [JSON,TEXT,NUM,ETC..]
- * @return @param to view.
- */
-if ( ! function_exists('set_output'))
-{
-	function set_output($data = ''){
-		$CI =& get_instance();
-		$param['output'] = $data;
-		$CI->load->view('output',$param);
-	}
-}
-=======
  * @param       [JSON,TEXT,NUM,ETC..]
  * @return      @param to view.
  */
@@ -75,6 +62,3 @@ if ( ! function_exists('set_output'))
 		$CI->load->view('output',$param);
     }
 }
-
-
->>>>>>> origin/casmacity
