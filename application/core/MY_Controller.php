@@ -16,6 +16,7 @@ class MY_Controller extends CI_Controller{
     public function index(){}
 
     public function Theme($view,$usepath = true){
+
         $theme = THEME;
         $data['data']['css']			=	isset($this->css) 		? $this->css 		: false;
         $data['data']['csslib']			=	isset($this->css_lib) 	? $this->css_lib 	: false;

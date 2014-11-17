@@ -100,6 +100,9 @@ class Welcome extends MY_Controller {
 		$this->innerView('welcome_message',FALSE);
 	*/
 
+
+		#$this->config->item('prueba','template');
+
 		$this->Theme('welcome_message',FALSE);
 	}
 }
