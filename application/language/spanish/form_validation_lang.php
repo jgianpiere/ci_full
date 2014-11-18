@@ -65,7 +65,7 @@ $lang['form_validation_less_than_equal_to']		= 'EL Campo {field} debe contener u
 $lang['form_validation_greater_than']			= 'EL Campo {field} debe contener un número mayor que {param}.';
 $lang['form_validation_greater_than_equal_to']	= 'EL Campo {field} debe contener un número mayor que o igual a {param}.';
 
-$lang['form_validation_is_date']				= 'La Fecha Ingresada en el campo {field} debe tener el siguiente formato {param} para ser una fecha valida.';
+$lang['form_validation_is_date']				= 'EL Campo {field} debe tener el siguiente formato {param} para ser una fecha valida.';
 $lang['form_validation_is_bool']				= 'El Campo {field} deber ser 0 o 1';
 $lang['form_validation_is_phone']				= 'El Campo {field} deber ser un numero telefonico valido';
 $lang['form_validation_is_between']				= 'El Campo {field} deber ser mayor igual que {param} y menor igual que {param}';
