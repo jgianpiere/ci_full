@@ -29,14 +29,14 @@ class MY_Form_validation extends CI_Form_validation {
 	// --------------------------------------------------------------------
 
 	/**
-     * Fecha
+     * validar si es una Fecha
      *
      * @access  public
      * @param   string
      * @param   string
      * @return  bool
      */
-    public function fecha($str = '', $format = '')
+    public function is_date($str = '', $format = '')
     {
         $separator_type= array( "/", "-", "." );
         foreach ($separator_type as $separator) {
