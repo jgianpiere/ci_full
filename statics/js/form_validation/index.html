@@ -1,0 +1,79 @@
+<!-- jQuery required for Plugin --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Usage after jQuery Plugin -->
+<script type="text/javascript" src="jQuery.form_validation.js"></script>
+
+<style type="text/css">
+/* 
+|	Default Styles for example.
+|
+|
+*/
+label{
+	display: inline-block;
+	color: gray;
+	margin:2px;
+	padding: 1px;
+	width: 70px;
+}
+input,textarea{
+	min-width: 250px;
+	width: 250px;
+	padding: 4px;
+	margin: 2px;
+	border-radius: 3px;
+	border: dashed 0.5px orange;
+	vertical-align: top;
+}
+
+input:focus,textarea:focus{
+	box-shadow: 1px 3px 1px gold;
+}
+</style>
+
+<!-- form Init -->
+<h2>Example Form Validation all includes</h2>
+<header>for Type [number,date,text,checked,textarea,select]</header>
+<form action="?" name="example" id="example" form-validation="">
+	<div>
+		<label for="#input-numeric">number</label>
+		<input type="number" name="input-numeric" id="input-numeric" value="">
+	</div>
+
+	<div>
+		<label for="#input-date">date</label>
+		<input type="date" name="input-date" id="input-date" value="">
+	</div>
+
+	<div>
+		<label for="#input-text">text</label>
+		<input type="text" name="input-text" id="input-text" value="">
+	</div>
+
+	<div>
+		<label for="#input-numeric">textarea</label>
+		<textarea name="input-textarea" id="input-textarea" cols="30" rows="10"></textarea>
+	</div>
+
+	<div>
+		<label for="#input-numeric">checked</label>
+		<input type="checked" name="input-check" id="input-numeric" value="">
+	</div>
+
+	<div>
+		<label for="#input-numeric">radio</label>
+		<input type="radio" name="input-numeric" id="input-numeric" value="">
+	</div>
+
+	<button>enviar</button>
+</form>
+
+<script type="text/javascript">
+	(function($){
+		if(jQuery.form_validation($('#example'))){
+			confirm('enviar ajax?');
+		}else{
+			alert('corregir campos');
+		};
+	})(jQuery);
+</script>
