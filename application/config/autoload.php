@@ -124,7 +124,7 @@ $autoload['drivers'] = array('session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('GlobalFn','url','language');
+$autoload['helper'] = array('globalfn','url','language');
 
 
 /*
@@ -173,7 +173,7 @@ $autoload['language'] = array('aplication','ErrorMessage');
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('mBase');
+$autoload['model'] = array();
 
 
 /* End of file autoload.php */

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * mBase Model Global
+ * mbase Model Global
  * 
  * @package     Model
  * @subpackage  mBase
@@ -8,6 +8,6 @@
  * @author      Gianpiere Julio Ramos Bernuy
  * @link        http://example.com
  */
-class mBase extends MY_Model{
-
+class mbase extends MY_Model{
+	
 }
