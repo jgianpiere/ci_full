@@ -8,10 +8,6 @@
  * @author      Gianpiere Julio Ramos Bernuy
  * @link        http://example.com
  */
-class Base_model extends MY_Model{
-	public function __construct(){
-        parent::__construct();   
-    }
+class mBase extends MY_Model{
 
-    
 }
