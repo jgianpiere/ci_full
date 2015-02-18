@@ -104,6 +104,7 @@ class Welcome extends MY_Controller {
 		#$this->config->item('prueba','template');
 
 		$this->Theme('welcome_message',FALSE);
+
 	}
 }
 
