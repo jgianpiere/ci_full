@@ -8,6 +8,6 @@
  * @author      Gianpiere Julio Ramos Bernuy
  * @link        http://example.com
  */
-class mBase extends MY_Model{
+class Base_model extends MY_Model{
 
 }

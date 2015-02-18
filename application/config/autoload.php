@@ -173,7 +173,7 @@ $autoload['language'] = array('aplication','ErrorMessage');
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('mBase');
+$autoload['model'] = array('Base_model');
 
 
 /* End of file autoload.php */
